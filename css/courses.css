@@ -1,0 +1,248 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/spartan.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/poppins.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* --- Fonts Importing --- */
+body {
+  font-family: "League Spartan", sans-serif;
+}
+ul {
+  list-style: none;
+}
+/* --- General Rules --- */
+:root {
+  --primary: #1ab69d;
+  --secondary: #ee4a62;
+  --tertiary: #f8b81f;
+
+  --black: #000000;
+  --white: #ffffff;
+  --gray: #ececec;
+
+  --transition: ease 0.4s all;
+
+  --font-Titles: "Spartan", sans-serif;
+  --font-Text: "Poppins-Regular", sans-serif;
+}
+/*--- Container ---*/
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 500px) {
+  .container {
+    width: 420px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/*--- Start ---*/
+.search-box .container{
+  margin-top: 75px;
+  position: relative;
+  text-align: end;
+}
+.search-box .container input {
+  padding: 17px 30px;
+  font-weight: bold;
+  font-size: 19px;
+  border-radius: 12px;
+  border: none;
+  background-color: #f5f5f5;
+  width: 345px;
+  caret-color: var(--primary);
+}
+.search-box .container i {
+  position: absolute;
+  font-size: 20px;
+  color: #777;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
+}
+.title-area{
+  text-align: center;
+  background-color: #f5f9fa;
+  padding: 40px;
+}
+.title-area h1 {
+  font-size: 60px;
+  word-spacing: 1.2;
+  font-weight: bolder;
+  letter-spacing: 2.1px;
+  font-family: var(--font-Titles);
+}
+.title-area .link-to-courses {
+  margin-top: -27px;
+}
+.title-area .link-to-courses a {
+  text-decoration: none;
+  color: #181818;
+  margin-top: -20px;
+  transition: var(--transition);
+  font-size: 16px;
+}
+.title-area .link-to-courses a:hover {
+  color: var(--primary);
+}
+.courses-section {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.courses-section .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 25px;
+}
+/*--- courses-section ---*/
+.courses-section .course {
+  max-width: 360px;
+  background-color: #f7f5f2;
+  transition: var(--transition);
+  position: relative;
+}
+.courses-section .course .offer-sign {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--tertiary);
+  display: block;
+  border-radius: 50px;
+  padding: 5px 13px;
+}
+.courses-section .course .offer-sign i {
+  margin-right: 5px;
+}
+.courses-section .course:hover {
+  transform: translateY(25px);
+}
+.courses-section .course img {
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.courses-section .course .content {
+  padding: 25px;
+}
+.courses-section .course .content .course-level {
+  font-size: 17px;
+  font-weight: 500;
+  padding: 2px 10px;
+  text-transform: capitalize;
+  color: var(--primary);
+  background-color: rgba(26, 182, 157, 0.15);
+  border-radius: 3px;
+}
+.courses-section .course .content h2 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  height: 18px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+}
+.rating .Star-rating .checked{
+  color: var(--tertiary);
+}
+.rating .content-of-rating {
+  margin-left: 10px;
+}
+.courses-section .course .content .price {
+  display: flex;
+}
+.courses-section .course .content .price .offer,
+.courses-section .course .content .price .deleted {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.courses-section .course .content .price .offer{
+  color: #ee4a62;
+  margin-right: 15px;
+}
+.courses-section .course .content .no-of-students {
+  position: relative;
+}
+.courses-section .course .content .no-of-students ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 30px;
+  margin-top: 0;
+  color: #777;
+}
+.courses-section .course .content .no-of-students .icon-1 {
+  position: relative;
+}
+.courses-section .course .content .no-of-students .icon-1 i {
+  position: absolute;
+  left: -28px;
+}
+.courses-section .course .content .no-of-students .icon-1::after {
+  content: " ";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #777;
+  right: -14px;
+}
+.courses-section .course .content .no-of-students .icon-2 {
+  position: relative;
+  margin-left: 50px;
+}
+.courses-section .course .content .no-of-students .icon-2 i{
+  position: absolute;
+  left: -23px;
+}
+.courses-section .course .content button {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  font-size: 20px;
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.courses-section .course .content button:hover {
+  border: 1px solid black;
+  color: var(--black);
+  background-color: var(--white);
+}
