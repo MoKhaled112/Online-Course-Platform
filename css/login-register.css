@@ -16,6 +16,7 @@ body {
     background: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
+    font-family: var(--font-Text);
 }
 
 .login img {
@@ -71,6 +72,7 @@ form input[type="email"] {
     border: 1px solid white;
     color: black;
     font-size: 16px;
+    font-family: var(--font-Text);
 }
 form input[type="submit"] {
     border: none;
@@ -79,10 +81,11 @@ form input[type="submit"] {
     height: 40px;
     font-size: 16px;
     background: var(--primary);
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
     margin-bottom: 25px;
-    transition: 0.5s ease;
+    transition: var(--transition);
+    font-family: var(--font-Text);
 }
 form input[type="submit"]:hover {
     transform: scale(1.1);
@@ -93,6 +96,7 @@ form a {
     font-weight: bold;
     font-size: 18px;
     transition: var(--transition);
+    font-family: var(--font-Titles);
 }
 
 .remembermeContainer {
