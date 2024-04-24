@@ -1,0 +1,110 @@
+body {
+    background: url(imge/backgound_test.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.login {
+    min-width: 450px;
+    height: 600px;
+    padding: 24px 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+}
+
+.login img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 0 auto;
+}
+
+.loginRegisterLinksContainer {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginRegisterLinksContainer a {
+    background-color: var(--gray);
+    color: var(--black);
+    text-decoration: none;
+    font-family: var(--font-Text);
+    font-size: 20px;
+    padding: 8px 18px;
+}
+
+.loginRegisterLinksContainer a.current {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.login h1 {
+    margin: 0;
+    padding: 20px 20px;
+    color: white;
+    text-align: center;
+}
+.login label {
+    color: white;
+    font-weight: bold;
+}
+form input {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    border: 1px solid white;
+    color: black;
+    font-size: 16px;
+}
+form input[type="submit"] {
+    border: none;
+    outline: none;
+    color: white;
+    height: 40px;
+    font-size: 16px;
+    background: var(--primary);
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: 0.5s ease;
+}
+form input[type="submit"]:hover {
+    transform: scale(1.1);
+}
+form a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+.remembermeContainer {
+    display: flex;
+    align-items: center;
+}
+
+#rememberMe {
+    width: unset;
+    margin-right: 12px;
+}
+
+#forgotPassword:hover {
+    color: var(--primary);
+}

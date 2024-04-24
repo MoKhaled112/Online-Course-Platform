@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Log In</title>
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="css/login-register.css" />
+    </head>
+    <body>
+        <div class="login">
+            <img src="images/user.png" alt="User Name" />
+            <div class="loginRegisterLinksContainer">
+                <a href="login.html" class="current">Log in</a>
+                <a href="register.html">Register</a>
+            </div>
+
+            <h1>Log in</h1>
+            <form class="login-form">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your Email" required /><br />
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter your Password" required /><br />
+
+                <div class="remembermeContainer">
+                    <input type="checkbox" id="rememberMe" value="true" />
+                    <label for="rememberMe">Remember me</label>
+                </div>
+                <input type="submit" value="Login" />
+                <a id="forgotPassword" href="#">Forgot password?</a>
+            </form>
+        </div>
+        <script src="js/login.js"></script>
+    </body>
+</html>
