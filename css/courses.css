@@ -405,11 +405,12 @@ header {
     color: var(--black);
     background-color: var(--white);
 }
+
 /* Footer Styles */
 
 footer {
     background-color: var(--primary);
-    padding: 48px 2vw;
+    padding: 100px 2vw;
     color: var(--black);
 }
 
