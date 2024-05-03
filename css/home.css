@@ -1,0 +1,132 @@
+.landingContainer {
+}
+
+.heroSection {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4vw;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    background-image: url("../images/heroBG.webp");
+    background-size: cover;
+}
+
+.heroSectionWrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.heroTextContainer {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.heroTextTitle {
+    font-family: var(--font-Text);
+    font-size: 3.5rem;
+}
+
+.heroTextHighlight {
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 4rem;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.heroTextDescription {
+    font-family: var(--font-Text);
+    font-size: 1.5rem;
+}
+
+.heroImageContainer {
+    width: 40%;
+}
+
+.heroImage {
+    width: 100%;
+    height: auto;
+}
+
+.heroCTAContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 32px;
+}
+
+.heroCTAContainer a {
+    background-color: var(--primary);
+    text-decoration: none;
+    padding: 16px 32px;
+    color: var(--black);
+    font-size: 1rem;
+    border-radius: 8px;
+    font-family: var(--font-Text);
+}
+
+.heroCTAContainer .heroCTA2 {
+    background-color: var(--black);
+    color: var(--primary);
+}
+
+/* heroBulletPoints */
+
+.heroBulletPoints {
+    width: 100vw;
+    margin-top: -10px;
+    background-image: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+}
+
+.heroBulletPointsWrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroBulletPoint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    padding: 32px 0;
+    border-right: 1px solid var(--gray);
+}
+
+.heroBulletPoint:last-child {
+    border-right: 0;
+}
+
+.heroBulletImage {
+    border-radius: 100%;
+    background-color: #ececec2d;
+    padding: 12px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.heroBulletImage svg {
+    width: 32px;
+    height: 32px;
+    stroke: var(--white);
+}
+
+.heroBulletText {
+    font-family: var(--font-Text);
+    font-size: 1.5rem;
+    color: var(--white);
+}
