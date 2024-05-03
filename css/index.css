@@ -60,7 +60,7 @@ header {
     font-weight: normal;
     font-family: var(--font-Text);
     align-self: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 8px;
     text-decoration: none;
     color: var(--black);
@@ -124,7 +124,7 @@ header {
 }
 
 .headerEnd a {
-    color: var(--black);
+    color: var(--white);
     border-radius: 10px;
     transition: var(--transition);
     display: inline-flex;
@@ -144,7 +144,7 @@ header {
     align-items: center;
     border-radius: 5px;
     background-color: var(--primary);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .headerEnd a.mainCTA:hover {
