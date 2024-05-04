@@ -285,6 +285,9 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 25px;
 }
+.course {
+    border-radius: 30px;
+}
 /*--- courses-section ---*/
 .courses-section .course {
     max-width: 360px;
