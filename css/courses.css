@@ -62,7 +62,7 @@ header {
     font-weight: normal;
     font-family: var(--font-Text);
     align-self: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 8px;
     text-decoration: none;
     color: var(--black);
@@ -126,7 +126,7 @@ header {
 }
 
 .headerEnd a {
-    color: var(--black);
+    color: var(--white);
     border-radius: 10px;
     transition: var(--transition);
     display: inline-flex;
@@ -146,7 +146,7 @@ header {
     align-items: center;
     border-radius: 5px;
     background-color: var(--primary);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .headerEnd a.mainCTA:hover {
@@ -439,11 +439,11 @@ footer {
 .footerColumn {
     display: flex;
     flex-direction: column;
-    width: 15%;
+    width: 25%;
 }
 
 .footerTitle {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
     font-family: var(--font-Text);
 }
@@ -474,6 +474,10 @@ footer {
     }
     .footerColumn {
         width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerList {
         justify-content: center;
         align-items: center;
     }
