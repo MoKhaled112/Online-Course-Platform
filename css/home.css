@@ -1,5 +1,4 @@
-.landingContainer {
-}
+/* Hero Section */
 
 .heroSection {
     width: 100%;
@@ -13,7 +12,7 @@
     background-size: cover;
 }
 
-.heroSectionWrapper {
+.wrapper {
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
@@ -80,6 +79,17 @@
     color: var(--primary);
 }
 
+@media screen and (max-width: 750px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .heroTextContainer,
+    .heroImageContainer {
+        width: 100%;
+    }
+}
+
 /* heroBulletPoints */
 
 .heroBulletPoints {
@@ -132,10 +142,30 @@
     color: var(--white);
 }
 
+@media screen and (max-width: 750px) {
+    .heroBulletPointsWrapper {
+        flex-wrap: wrap;
+    }
+    .heroBulletPoint {
+        width: 50%;
+        border: 0;
+        border-bottom: 1px solid var(--gray);
+        border-right: 1px solid var(--gray);
+    }
+    .heroBulletImage svg {
+        width: 24px;
+        height: 24px;
+    }
+    .heroBulletText {
+        font-size: 1rem;
+    }
+}
+
 /* ChooseYourLevel */
 
 .ChooseYourLevel {
     margin: 100px 0;
+    margin-bottom: 124px;
 }
 
 .sectionTitle {
@@ -207,4 +237,86 @@
 
 .levelCard:hover .levelCardImage svg {
     fill: var(--white);
+}
+
+@media screen and (max-width: 750px) {
+    .levelsContainer {
+        flex-wrap: wrap;
+    }
+}
+
+/* Partners Section */
+
+.PartnersSection {
+    background-color: #efefef;
+    color: var(--black);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 150px 0;
+    padding-top: 102px;
+}
+
+.partnersInfoContainer {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnersInfoContainer .sectionTitle {
+    text-align: start;
+    padding-left: 2vw;
+}
+
+.partnersLogos {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0rem;
+    z-index: 1;
+}
+
+.partner {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    transition: ease 0.4s all;
+}
+
+.partner:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.partner img {
+    width: 7vw;
+    height: 7vw;
+}
+
+@media screen and (max-width: 750px) {
+    .partnersInfoContainer {
+        width: 100%;
+    }
+    .partnersInfoContainer .sectionTitle {
+        text-align: center;
+    }
+    .partnersLogos {
+        width: 100%;
+    }
+    .partner {
+        margin: 0.5rem;
+        padding: 0.8rem;
+    }
+    .partner img {
+        width: 7rem;
+        height: 7rem;
+    }
 }
