@@ -1,0 +1,162 @@
+.title-area {
+  text-align: center;
+  background-color: #f5f9fa;
+  padding: 90px;
+}
+/* --- General Rules --- */
+:root {
+    --primary: #1ab69d;
+    --secondary: #ee4a62;
+    --tertiary: #f8b81f;
+
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #ececec;
+
+    --transition: ease 0.4s all;
+
+    --font-Titles: "Spartan", sans-serif;
+    --font-Text: "Poppins-Regular", sans-serif;
+    --section-padding: 70px;
+}
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.title-area h1 {
+  font-size: 60px;
+  word-spacing: 1.2;
+  font-weight: bolder;
+  letter-spacing: 2.1px;
+  font-family: var(--font-Titles);
+}
+.title-area .link-to-courses {
+  margin-top: 16px;
+}
+.title-area .link-to-courses a {
+  text-decoration: none;
+  color: #181818;
+  margin-top: -20px;
+  transition: var(--transition);
+  font-size: 16px;
+}
+.title-area .link-to-courses a:hover {
+  color: var(--primary);
+}
+.contact-section {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.contact-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-section .contact-info h3{
+  font-size: 35px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+.contact-section .contact-info .address p {
+  color: var(--gray);
+}
+.contact-section .contact-info .address h6,
+.contact-section .contact-info .email h6,
+.contact-section .contact-info .phone h6{
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.contact-section .contact-info .address p
+ {
+  color: #7A7A7A;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.contact-section .contact-info .email a,
+.contact-section .contact-info .phone a {
+  font-size: 17px;
+}
+.contact-section .contact-info .address,
+.contact-section .contact-info .email,
+.contact-section .contact-info .phone{
+  margin-bottom: 25px;
+}
+.contact-section .contact-info .email a,
+.contact-section .contact-info .phone a{
+  text-decoration: none;
+  color: #181818e6;
+  transition: var(--transition);
+}
+.contact-section .contact-info .email a:hover,
+.contact-section .contact-info .phone a:hover{
+  color: var(--primary);
+}
+.contact-section .contact-info .icons {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.contact-section .contact-info .icons i {
+  margin-right: 25px;
+  font-size: 25px;
+  transition: var(--transition);
+  cursor: pointer;
+  color: #7A7A7A;
+}
+.contact-section .contact-info .icons i:hover {
+  color: var(--primary);
+}
+.contact-section .send-message {
+  width: 500px;
+  padding: 60px;
+  background-color: #ececec;
+  border-radius: 10px;
+}
+.contact-section .send-message h5 {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.contact-section .send-message p {
+  color: #7A7A7A;
+  line-height: 1.6;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.contact-section .send-message form input:not(:last-child) {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #7A7A7A;
+  background-color: inherit;
+  outline: none;
+}
+.contact-section .send-message form .text-area {
+  border: none;
+  background-color: inherit;
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid var(--primary);
+  outline: none;
+}
+.contact-section .send-message form input[type="submit"] {
+  margin-top: 30px;
+  padding: 15px 40px 15px 35px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  color: var(--white);
+  background-color: var(--primary);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.contact-section .send-message form input[type="submit"]:hover {
+  background-color: var(--black);
+}
+.contact-section .send-message form .arrow {
+  position: relative;
+  right: -196px;
+  color: var(--white);
+}
