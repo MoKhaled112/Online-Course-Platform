@@ -79,7 +79,7 @@
     color: var(--primary);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
     .wrapper {
         flex-direction: column;
         gap: 20px;
@@ -95,6 +95,7 @@
 .heroBulletPoints {
     width: 100vw;
     background-image: linear-gradient(-90deg, #31b978 0%, #1ab69d 100%);
+    overflow: hidden;
 }
 
 .heroBulletPointsWrapper {
@@ -142,7 +143,7 @@
     color: var(--white);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
     .heroBulletPointsWrapper {
         flex-wrap: wrap;
     }
@@ -168,21 +169,11 @@
     margin-bottom: 124px;
 }
 
-.sectionTitle {
-    font-weight: 700;
-    font-size: 4rem;
-    font-family: "League Spartan", sans-serif;
-    color: var(--black);
-    text-align: center;
-    margin-bottom: 32px;
-    text-decoration: underline var(--primary);
-    text-decoration-thickness: 5px;
-}
-
 .levelsContainer {
     display: flex;
     justify-content: center;
     gap: 20px;
+    overflow: hidden;
 }
 
 .levelCard {
@@ -239,7 +230,7 @@
     fill: var(--white);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
     .levelsContainer {
         flex-wrap: wrap;
     }
@@ -301,7 +292,7 @@
     height: 7vw;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
     .partnersInfoContainer {
         width: 100%;
     }
