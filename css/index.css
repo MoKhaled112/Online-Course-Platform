@@ -25,7 +25,9 @@
     text-rendering: optimizeLegibility;
     margin: 0;
 }
-
+ul {
+    list-style: none;
+}
 :root {
     --primary: #1ab69d;
     --secondary: #ee4a62;
@@ -55,7 +57,9 @@
     text-decoration: underline var(--primary);
     text-decoration-thickness: 5px;
 }
-
+body {
+    font-family: "League Spartan", sans-serif;
+}
 /*--- Container ---*/
 .container {
     padding-left: 15px;
@@ -245,73 +249,122 @@ header {
 /* Footer Styles */
 
 footer {
-    background-color: var(--primary);
+    background-color: #e9e9e9;
     padding: 100px 2vw;
     color: var(--black);
 }
-
-.footerContainer {
+footer .container {
     display: flex;
-    justify-content: center;
-    width: 100%;
-    gap: 2vw;
+    justify-content: space-between;
 }
-
-.footerLogoContainer {
+footer .info {
+    max-width: 240px;
+    font-size: 19px;
+}
+footer .logo {
     display: flex;
     align-items: center;
-    width: 30%;
-    max-width: 180px;
-    margin-right: 10vw;
 }
-
-.footerLogo img {
-    height: 70px;
+footer .logo h4 {
+    padding-left: 10px;
+    font-size: 22px;
 }
-
-.footerColumn {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
+footer .logo h4 {
+    font-weight: normal;
 }
-
-.footerTitle {
-    font-size: 28px;
-    margin-bottom: 20px;
-    font-family: var(--font-Text);
+footer .logo h4 span {
+    font-weight: bold;
 }
-
-.footerList {
-    display: flex;
-    flex-direction: column;
+footer .info p {
+    margin-top: 15px;
+    font-size: 17px;
+    margin-bottom: 30px;
+    line-height: 1.4;
 }
-
-.footerListItem {
-    margin-bottom: 10px;
+footer .info .contact {
+    display: block;
+    margin-bottom: 15px;
+}
+footer .info span a {
     text-decoration: none;
     color: var(--black);
-    font-size: 22px;
-    font-family: var(--font-Titles);
     transition: var(--transition);
 }
-
-.footerListItem:hover {
-    text-decoration: underline;
+footer .info span a:hover {
+    color: var(--primary);
+}
+footer .online-platform {
+    font-size: 19px;
+    text-transform: capitalize;
+}
+footer .online-platform h4 {
+    margin-bottom: 36px;
+    font-size: 25px;
+    margin-left: 34px;
+}
+footer .online-platform ul li a {
+    display: block;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: var(--black);
+    transition: var(--transition);
+}
+footer .online-platform ul li a:hover {
+    color: var(--primary);
+}
+.contacts {
+    max-width: 370px;
+    font-size: 19px;
+}
+.contacts h4 {
+    margin-bottom: 36px;
+    font-size: 25px;
+}
+.contacts p {
+    font-size: 17px;
+    margin-bottom: 23px;
+    line-height: 1.4;
+}
+.contacts form input[type="email"] {
+    border: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    width: 185px;
+    outline: none;
+}
+.contacts form input[type="submit"] {
+    border: none;
+    padding: 13px 20px;
+    margin-left: 7px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background-color: var(--primary);
+    color: var(--white);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.contacts form input[type="submit"]:hover {
+    background-color: #000000;
+}
+.contacts .links i {
+    margin-right: 18px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.contacts .links .facebook {
+    color: blue;
+}
+.contacts .links .linkedin {
+    color: blue;
+}
+.contacts .links .github {
+    color: black;
+}
+.contacts .links .twitter {
+    color: rgb(17, 17, 171);
+}
+.contacts .links .youtube {
+    color: red;
 }
 
-@media screen and (max-width: 900px) {
-    .footerContainer {
-        flex-direction: column;
-        gap: 2rem;
-        align-items: center;
-    }
-    .footerColumn {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
-    .footerList {
-        justify-content: center;
-        align-items: center;
-    }
-}
+

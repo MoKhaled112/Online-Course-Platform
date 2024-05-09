@@ -8,12 +8,17 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!--normalize file-->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link href="css/index.css" rel="stylesheet" />
+        <link href="css/home.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
             rel="stylesheet" />
-
-        <link href="css/index.css" rel="stylesheet" />
-        <link href="css/home.css" rel="stylesheet" />
         <link rel="icon" href="images/logo.png" type="image/png" />
     </head>
 
@@ -248,32 +253,52 @@
             </section>
         </section>
         <footer>
-            <div class="footerContainer">
-                <div class="footerColumn">
-                    <div class="footerTitle">Main</div>
-                    <div class="footerList">
-                        <a href="/" class="footerListItem">Home</a>
-                        <a href="/about.html/" class="footerListItem">About Us</a>
-                        <a href="/courses.html" class="footerListItem">Courses</a>
+                <div class="container">
+                    <div class="info">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="">
+                            <h4><span>Edu</span>Blink</h4>
+                        </div>
+                        <p>Lorem ipsum dolor amet consecto adi pisicing elit sed eiusm tempor incidid unt labore dolore.</p>
+                        <span class="contact">Call: <a href="#"> +01 149 7114 81</a></span>
+                        <span class="contact">Email: <a href="#"> adhammKh@gmail.com</a></span>
+                    </div>
+                    <div class="online-platform">
+                        <h4>online platform</h4>
+                        <ul>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">course</a></li>
+                            <li><a href="#">instructor</a></li>
+                            <li><a href="#">events</a></li>
+                            <li><a href="#">instructor details</a></li>
+                        </ul>
+                    </div>
+                    <div class="online-platform">   <!-- same name of previus class for the same style of class(online-platform)-->
+                        <h4>links</h4>
+                        <ul>
+                            <li><a href="#">contact us</a></li>
+                            <li><a href="#">gallery</a></li>
+                            <li><a href="#">news &and; articles</a></li>
+                            <li><a href="#">FAQ’s</a></li>
+                            <li><a href="#">sign In/Registration</a></li>
+                        </ul>
+                    </div>
+                    <div class="contacts">
+                        <h4>contacts</h4>
+                        <p>Enter your email address to register to our newsletter subscription</p>
+                        <form action="">
+                            <input type="email" placeholder="Your email">
+                            <input type="submit" value="subscribe">
+                        </form>
+                        <div class="links">
+                            <i class="fa-brands fa-facebook facebook"></i>
+                            <i class="fa-brands fa-linkedin linkedin"></i>
+                            <i class="fa-brands fa-github github"></i>
+                            <i class="fa-brands fa-twitter twitter"></i>
+                            <i class="fa-brands fa-youtube youtube"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="footerColumn">
-                    <div class="footerTitle">Actions</div>
-                    <div class="footerList">
-                        <a href="/login.html" class="footerListItem">Login</a>
-                        <a href="/register.html" class="footerListItem">Register</a>
-                        <a href="/contact.html" class="footerListItem">Contact Us</a>
-                    </div>
-                </div>
-                <div class="footerColumn">
-                    <div class="footerTitle">Social Media</div>
-                    <div class="footerList">
-                        <a target="_blank" href="#" class="footerListItem" rel="noopener">Facebook</a>
-                        <a target="_blank" href="#" class="footerListItem" rel="noopener">Twitter</a>
-                        <a target="_blank" href="#" class="footerListItem" rel="noopener">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
         </footer>
         <script src="js/app.js"></script>
     </body>
